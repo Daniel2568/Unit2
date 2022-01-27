@@ -17,3 +17,7 @@ Create a program which will take in an input and print out that input divided by
 Alter one line of that program to return only whole numbers.
 
 '''
+num_ber = int(input("Please enter any number>"))
+age_div_2 = num_ber/2
+print(age_div_2)
+
