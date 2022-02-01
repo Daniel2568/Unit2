@@ -87,3 +87,5 @@ if x + y > z and x + z > y and y + z > x:
 else:
     print("This is scalene triangle.")
 
+    
+
