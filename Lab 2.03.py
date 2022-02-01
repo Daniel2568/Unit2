@@ -55,14 +55,6 @@ Translate this Snap! program into a Python program
 ***Refer to the image provided on Moodle located below the Lab 2.03 link***
 Write program below:
 
----------------------------------------
-Create a game show program
----------------------------------------
-Declare 10 prizes (prize1, prize2, prize 3 at the top of your file)
-User picks a number
-The prize corresponding with that door is printed for the user.
-Write code below the multiline comment
-'''
 # get three sides of a triangle
 # use print statements/functions to make sure things are working
 x = int(input("What is x?"))
@@ -72,7 +64,7 @@ z = int(input("What is z?"))
 
 #can it be a triangle 
 if x + y > z and x + z > y and y + z > x:
-    print(f"Perimeter of the triangle is: (x + y + z)")
+    print(f"Perimeter of the triangle is: {x + y + z}")
     
     
     #is it a right triangle 
@@ -80,12 +72,24 @@ if x + y > z and x + z > y and y + z > x:
         print("This is a right triangle.")
 
         #is determine if its an iscosolese, scalene, or equalateral
-        if x == y and y == z
+    if x == y and y == z:
         print("This is an equalateral triangle.")
     elif x == y or z == y or x == z:
         print("This ia an iscosoles triangle.")
-else:
-    print("This is scalene triangle.")
+    else:
+        print("This is scalene triangle.")
+else: 
+    print("This is not a triangle.")
 
-    
+---------------------------------------
+Create a game show program
+---------------------------------------
+Declare 10 prizes (prize1, prize2, prize 3 at the top of your file)
+User picks a number
+The prize corresponding with that door is printed for the user.
+Write code below the multiline comment
+'''
+
+
+
 
