@@ -13,10 +13,10 @@ Open up the console. Type each line of the following code into the interactive e
  >>> user_favorite_animal = input("What is your favorite animal? ")
  >>> my_favorite_animal == user_favorite_animal
 In your notebook, answer the following
-What does 5 < 3 evaluate to?  
-What is the type of 5 < 3? What does that stand for (should be familiar from Snap!)?
-What is the difference between == and = ?
-What data type do you think my_favorite_animal == user_favorite_animal is?
+What does 5 < 3 evaluate to? false 
+What is the type of 5 < 3? What does that stand for (should be familiar from Snap!)? less than
+What is the difference between == and = ? == is saying one thing is equal to two different things and = is just saying one thing is equal to one thing
+What data type do you think my_favorite_animal == user_favorite_animal is? variable
 ----------------------------
 Part 2
 ----------------------------
@@ -37,5 +37,5 @@ Open up the console. Type the following code into the interactive editor.
 >>> animal = 'mouse'
 >>> animal == 'cat' or animal == 'dog'
 In your notebook, continue answers to the following
-What does = and == do here?
-What is the difference between the two 'or' statements?
+What does = and == do here? gives 'animal' two different variables 
+What is the difference between the two 'or' statements? one has an == then an 'or' and then the other time it is used to do the same thing but looks different and is separated into two separate parts
