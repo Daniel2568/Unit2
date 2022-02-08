@@ -51,3 +51,40 @@ not(x or y) == not x and not y
 
 not(x and y) == not x or not y
 '''
+print('Can you be president? Lets see if you qualify! ')
+required_age = '35'
+required_resident = '14'
+born_in_US = 'yes'
+user_age = input('How old are you?> ')
+user_resident = input ('How many years have you been a US resident?>')
+user_born = input ('Are you born in the US? [yes or no]   ')
+can_you_be_president = (user_age >= required_age) and (user_resident >= required_resident) and (user_born == born_in_US)
+print(can_you_be_president) 
+'''
+#I Can't be president?
+
+'''
+print('I cant be president? ')
+required_age = '35'
+required_resident = '14'
+born_in_US = 'yes'
+user_age = input('How old are you?>')
+user_resident = input ('How many years have you been a US resident?>')
+user_born = input ('Are you born in the US? [yes or no]   ')
+can_you_be_president = (user_age >= required_age) and (user_age >= required_age) and (born_in_US == user_born)
+print(can_you_be_president)
+
+
+#Can i Ride the roller coaster?
+
+print('can you ride the roller coaster? well lets find out!')
+required_height = '50'
+minimum_age_for_no_height_requirement = '18'
+minimum_quarters_to_go_on_ride = '4'
+frequent_rider_pass = 'yes'
+user_height = input (' How tall are you in inches?> ')
+user_age_for_roller_coaster = input ('How old are you?> ')
+user_quarters = input ('How many quarters do you have on you to pay for this roller coaster?> ')
+user_pass = input('do you have a frequent rider pass? [yes or no] ')
+can_you_go_on_the_roller_coaster = (user_height >= required_height) and (user_quarters >= minimum_quarters_to_go_on_ride) or (user_age_for_roller_coaster >= minimum_age_for_no_height_requirement) and (user_pass == frequent_rider_pass)
+print (can_you_go_on_the_roller_coaster)
