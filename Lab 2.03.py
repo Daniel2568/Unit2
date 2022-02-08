@@ -90,6 +90,47 @@ The prize corresponding with that door is printed for the user.
 Write code below the multiline comment
 '''
 
+#prizes 
+
+
+prize_1 = 'Apple_Watch_SE'
+prize_2 = 'Mystery_Box'
+prize_3 = 'Airpods'
+prize_4 = 'hat'
+prize_5 = '$10,000'
+prize_6 = 'Jar_of_pickles'
+prize_7 = 'Winning_lotery_ticket'
+prize_8 = 'Bucket_of_sardines'
+prize_9 = 'Pie_face_slap'
+prize_10 = 'Any_Phone_of_Choice'
+
+#user chooses the prize door
+
+user_chooses_the_door_with_a_prize_behind_it = input("Which door would you like to pick [pick doors from 1-10]?>")
+
+#user gets any of the given prizes 
+
+if user_chooses_the_door_with_a_prize_behind_it == '1': 
+    print(prize_1)
+    if user_chooses_the_door_with_a_prize_behind_it == '2':
+        print(prize_2)
+    if user_chooses_the_door_with_a_prize_behind_it == '3':
+        print(prize_3)
+    if user_chooses_the_door_with_a_prize_behind_it == '4':
+        print(prize_4)
+    if user_chooses_the_door_with_a_prize_behind_it == '5':
+        print(prize_5)
+    if user_chooses_the_door_with_a_prize_behind_it == '6':
+        print(prize_6)
+    if user_chooses_the_door_with_a_prize_behind_it == '7':
+        print(prize_7)
+    if user_chooses_the_door_with_a_prize_behind_it == '8':
+        print(prize_8)
+    elif user_chooses_the_door_with_a_prize_behind_it == '9':
+        print(prize_9)
+    else:
+        print(prize_10)
+
 
 
 
