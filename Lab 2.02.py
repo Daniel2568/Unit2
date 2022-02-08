@@ -70,7 +70,7 @@ required_resident = '14'
 born_in_US = 'yes'
 user_age = input('How old are you?>')
 user_resident = input ('How many years have you been a US resident?>')
-user_born = input ('Are you born in the US? [yes or no]   ')
+user_born = input ('Were you born in the US? [yes or no]   ')
 can_you_be_president = (user_age >= required_age) and (user_age >= required_age) and (born_in_US == user_born)
 print(can_you_be_president)
 
