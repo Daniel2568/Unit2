@@ -52,3 +52,77 @@ Print the updated board out.
 You will not need to determine the winner at this point.
 (Copy and paste your previous tic-tac-toe version and modify the code to implement the above)
 '''
+
+#initial variables
+
+#row one 
+board = [[1,2,3],[4,5,6],[7,8,9]]
+turns = 0 
+player = 1 #going to keep track of which player 
+player_symbol = ""
+
+
+#print starting board 
+print(f"{board[0][0]} | {board[0][1]} | {board[0][2]}")
+print("---------")
+print(f"{board[1][0]} | {board[1][1]} | {board[1][2]}")
+print("---------")
+print(f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
+print()
+
+#main game loop 
+while turns < 9:
+    if player == 1:
+        player_symbol = 'X'
+    else: 
+        player_symbol = 'O'
+    player_choice = int(input(f"Choose a number to place your {player_symbol}"))
+    
+
+    #locate where to place symbol 
+    if player_choice == 1:
+        board[0][0] = player_symbol  
+    elif player_choice == 2:
+        board[0][1] = player_symbol
+    elif player_choice == 3:
+        board[0][2] = player_symbol
+    elif player_choice == 4:
+        board[1][0] = player_symbol
+    elif player_choice == 5:
+        board[1][1] = player_symbol
+    elif player_choice == 6:
+        board[1][2] = player_symbol
+    elif player_choice == 7:
+        board[2][0] = player_symbol
+    elif player_choice == 8:
+        board[2][1] = player_symbol
+    elif player_choice == 9:
+        board[2][2] = player_symbol
+    else:
+        print("invalid player_choice")
+
+    turns += 1
+
+
+    print(f"{board[0][0]} | {board[0][1]} | {board[0][2]}")
+    print("---------")
+    print(f"{board[1][0]} | {board[1][1]} | {board[1][2]}")
+    print("---------")
+    print(f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
+    print()
+
+    # determain next player 
+    if player == 1:
+        player = 2
+
+    else:
+        player = 1
+
+
+print("Game Over")
+
+
+
+
+
+

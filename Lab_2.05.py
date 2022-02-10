@@ -10,16 +10,16 @@ a = ['a', 'b', 'c', 'd', 'e']
 print(a[0:3])
 print(a[1:4])
 
-Prediction: print(a[0:3]) will print ['a','b','c'] and print(a[1:4]) will print ['b','c','d','e']
-Actual: print(a[0:3]) = ['a','b','c'] and print(a[1:4]) = ['b', 'c', 'd']
+Prediction: I'm not sure 
+Actual: print(a[0:3]) = ['a', 'b', 'c] and for print(a[1:4]) = ['b', 'c', 'd']
 
 Example 2
 ---------
 a = ['a', 'b', 'c', 'd', 'e']
 print(a[1:len(a) - 3])
 
-Prediction: I'm not 100% sure because Idk what 'len' means
-Actual: print(a[1:len(a) - 3]) = ['b']
+Prediction: I'm not sure because idk what len is 
+Actual: prints ['b']
 
 Example 3
 ---------
@@ -28,8 +28,8 @@ b = a.remove('b')
 print(a)
 print(b)
 
-Prediction: print(a) will be just normal ['a', 'b', 'c', 'd', 'e'] and print(b) will equal ['a', 'c', 'd', 'e']
-Actual: print(a) = ['a', 'c', 'd', 'e']  print(b) = None
+Prediction: will print everything in 'a' but b in the brackets a is equal to 
+Actual: print(a) = ['a', 'c', 'd', 'e'] ; print(b) = None
 
 Example 4
 ---------
@@ -39,8 +39,8 @@ b = a.pop()
 print(a)
 print(b)
 
-Prediction: print(a) = ['haha','b','c','d','e'] print(b) = I'm not sure what pop means
-Actual: print(a) = ['haha','b','c','d'] print(b) = e
+Prediction: print(b) will be invalid because the parenthesis is empty
+Actual: print(a) = ['haha','b','c','d'] and print('b') = e
 
 Example 5
 ---------
@@ -49,8 +49,8 @@ b = a + ['abc']
 print(a)
 print(b)
 
-Prediction: print(a) will print ('a','abc','b','c','d','e') and print(b) = the same thing??
-Actual: print(a) = ['a', 'b', 'c', 'd', 'e'] print(b) = ['a', 'b', 'c', 'd', 'e', 'abc']
+Prediction: print(a) = ['a', 'b', 'c', 'd', 'e'] and print(b) = ['a', 'b', 'c', 'd', 'e','abc']
+Actual: print(a) = ['a', 'b', 'c', 'd', 'e'] and print(b) = ['a', 'b', 'c', 'd', 'e','abc']
 
 Example 6
 ---------
@@ -59,8 +59,8 @@ b = a.append('f')
 print(a)
 print(b)
 
-Prediction: print(a) will probably print ['a', 'b', 'c', 'd', 'e'] and im not sure what print(b) will do because Idk what append does
-Actual: print(a) = ['a', 'b', 'c', 'd', 'e', 'f'] print(b) = None
+Prediction: I'm not 100% sure (other than a will print as it normally has been)
+Actual: print (a) = ['a', 'b', 'c', 'd', 'e'] and print(b) = None
 2. In script mode (Type your program below the multi-line comment)
 We are going to start implementing Tic-Tac-Toe using a single list.
 1. The user picks a location on the board according to the number:
@@ -80,6 +80,7 @@ that.
 3. Print the updated board out, but don't worry about making it look pretty.
 4. Only need to implement one turn of the game
 '''
+
 
 #only one turn is being used 
 
