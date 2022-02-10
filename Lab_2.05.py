@@ -80,3 +80,27 @@ that.
 3. Print the updated board out, but don't worry about making it look pretty.
 4. Only need to implement one turn of the game
 '''
+
+#only one turn is being used 
+
+
+#print starting board 
+
+
+board = [[1,2,3] , [4,5,6] , [7,8,9]]
+
+
+print(f"{board[0][0]} | {board[0][1]} | {board[0][2]}")
+print("---------")
+print(f"{board[1][0]} | {board[1][1]} | {board[1][2]}")
+print("---------")
+print(f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
+
+
+#Players turn 
+
+turn = int(input("Pick a number and that's where your   x   will go."))
+
+
+if turn == 1:
+    
