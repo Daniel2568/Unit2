@@ -1,6 +1,0 @@
-# Text Monster Game 
-
-# Map of dungeon 
-floor2 = ['prize', 'boss monster','sword']
-floor1 = []
-floor0 = [] 
