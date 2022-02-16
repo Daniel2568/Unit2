@@ -11,7 +11,7 @@ dungeon = [
     ]
 
 # Player info 
-Inventory = []
+inventory = []
 current_room = 0
 current_floor = 2
 location = dungeon[current_floor][current_room]
@@ -42,7 +42,7 @@ while True:
         print("You have found some gold, potions, and a sheild with a sword enscribed with an enchanment saying the sword never breaks")
     
     #player choices 
-    player_choices = input("What would you like to do?[move left, right, up, down, grab, fight]")
+    player_choices = input("What would you like to do?[move left, right, up, down, grab, fight, inventory]")
     print(player_choices)
 
     if player_choices == 'right' :
@@ -67,23 +67,40 @@ while True:
             print("You cannot move up or down anymore. The stairs only go down or there are no stairs to go up or down") 
     elif player_choices == 'grab' :
         if location == 'sword' : 
-            Inventory.append(location)
+            inventory.append(location)
             dungeon[current_floor][current_room] = 'empty'
         elif location == 'magic stones':
-            Inventory.append(location)
+            inventory.append(location)
             dungeon[current_floor][current_room] = 'empty'
         elif location == 'monster' or location == 'boss monster': 
             print("what a nice choice") #make this more intresting
     elif player_choices == 'inventory' : 
         print("You have:") # if you want to test a(the) program without getting errors then type "pass" under the code with no quotes
-        print(' '. join(Inventory)) # and it will ignore the code "pass" is under
+        print(' '. join(inventory)) # and it will ignore the code "pass" is under
     
 
     elif player_choices == 'fight' :
-        pass
-        #hjkdshjkhskjhkj 
+
         if location == 'monster' :
-            pass 
+            if 'sword' in inventory:
+                print("You have made your choice to attempt to kill this little annoying gross hairy thing.") 
+                print(f"You found it was easier than you thought it would be to try and destroy this hairy mop \nThe only problem is that your sword broke")
+                inventory.remove('sword')
+                dungeon[current_floor][current_room] = 'empty'
+                print(f"the current location is {dungeon[current_floor][current_room]}")
+                 
+            else: 
+                print(f"That wasn't very smart now wasn't you dummy \n You Died and the moster still remains") #make this more intresting
+        
+        if location == 'boss monster' :
+            if 'sword' and 'magic stones' in inventory:
+                print("You will try to kill the boss monster") # make this more intresting 
+                dungeon[current_floor][current_room] = 'empty'
+                print(f"the current location is {dungeon[current_floor][current_room]}")
+                print("You have vanquished the boss monster you may now move on without worry")
+            else: 
+                print("That wasn't very smart now wasn't you dummy. You Died and the moster still remains") #make this more intresting
+
 
 
 
