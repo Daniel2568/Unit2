@@ -73,7 +73,7 @@ while True:
             inventory.append(location)
             dungeon[current_floor][current_room] = 'empty'
         elif location == 'monster' or location == 'boss monster': 
-            print("what a nice choice") #make this more intresting
+            print("That probably wasn't the smartest choice ever and now the monster is not only confused but now extremely furious") 
     elif player_choices == 'inventory' : 
         print("You have:") # if you want to test a(the) program without getting errors then type "pass" under the code with no quotes
         print(' '. join(inventory)) # and it will ignore the code "pass" is under
