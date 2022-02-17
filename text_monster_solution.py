@@ -102,6 +102,7 @@ while Game_Over == False:
                 dungeon[current_floor][current_room] = 'empty'
                 print(f"the current location is {dungeon[current_floor][current_room]}")
                 print("You have vanquished the boss monster you may now move on without worry")
+                
                 Game_Over = True 
             else: 
                 print("That wasn't very smart now wasn't you dummy. You Died and the moster still remains") #make this more intresting
@@ -114,6 +115,7 @@ while Game_Over == True:
         print("You died trying to fight a monster with your fingers")
     else: 
          print("You won!")
+         print("You helped the wizard with his problems. He is very thankful and has given you some neat potions and gifts.")
 
     # play again?
     user_input = input("Would you like to play again? (y/n)")
