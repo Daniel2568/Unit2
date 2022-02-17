@@ -2,6 +2,7 @@
 
 # Map of dungeon 
 from calendar import c
+from telnetlib import GA
 
 
 dungeon = [
@@ -11,13 +12,15 @@ dungeon = [
     ]
 
 # Player info 
+Game_Over = False 
+dead = False 
 inventory = []
 current_room = 0
 current_floor = 2
 location = dungeon[current_floor][current_room]
 
 #game loop
-while True:
+while Game_Over == False:
 
     # update location 
     location = dungeon[current_floor][current_room]
@@ -31,7 +34,7 @@ while True:
     elif location == 'stairs up' :
         print("You see some stairs that seem to be going up") 
     elif location == 'monster' :
-        print("You see a weird thing that has goo all over it and seems to be picking it's nose") 
+        print("You see a weird thing that has goo all over it and seems to be picking it's nose \n You better get out of there quick before he hits gold and sees you") 
     elif location == 'stairs down' : 
         print("You see some stairs going down") 
     elif location == 'magic stones' :
@@ -91,16 +94,32 @@ while True:
                  
             else: 
                 print(f"That wasn't very smart now wasn't you dummy \n You Died and the moster still remains") #make this more intresting
-        
+                dead = True 
+                break 
         if location == 'boss monster' :
             if 'sword' and 'magic stones' in inventory:
                 print("You will try to kill the boss monster") # make this more intresting 
                 dungeon[current_floor][current_room] = 'empty'
                 print(f"the current location is {dungeon[current_floor][current_room]}")
                 print("You have vanquished the boss monster you may now move on without worry")
+                Game_Over = True 
             else: 
                 print("That wasn't very smart now wasn't you dummy. You Died and the moster still remains") #make this more intresting
+                dead = True 
 
+# determine win/loss
+while Game_Over == True:
+    if dead == True: 
+        print("Game Over")
+        print("You died trying to fight a monster with your fingers")
+    else: 
+         print("You won!")
+
+    # play again?
+    user_input = input("Would you like to play again? (y/n)")
+    if user_input == 'y':
+        dead = False 
+        Game_Over = False
 
 
 
