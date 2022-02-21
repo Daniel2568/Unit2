@@ -27,6 +27,20 @@ while Game_Over == False:
 
 
     # describe where we are to the user 
+    print("Welcome to Text Monster Adventure!")
+    print("You live in a small town in the mythical world of magic. One day you wake up and check your mail")
+    print("Player: Oh, whats this? A letter from the Grand Wizard Gandolf.")
+    print("You open the letter. The letter says:\nDear Player,\nI am in need of some help that may require some explanation.\nCome as soon as you can.\nfrom, Gandolf-")
+    print("You get ready and go to his house")
+    print("You knock on the door")
+    print("Gandolf answers: Ahh I see you have found my letter. Come in I have things to tell you\nyou walk into the house and go into the dining room")
+    print("Gandolf: I have a problem, You see I have some stone that have gotten stolen from me.\nNow I know who stole them but the problem is getting them back\nI am getting very old and need you to get them for me.\nIt is a lot to ask but if you're up for the task you will be rewarded handsomely")
+    print("You think about the quest you are given.\nGandolf: Oh and before you make a final decision the quest will take place in the dungeon of Garabond,\nthere you will find the stones somewhere in the dungeon, there will also be monsters you need to fight\nAll the equipment you will need, you should be able to find in the dungeon\nGoodluck")
+    print("You take this into consideration and say: Alright Gandolf, where do I go")
+    print("Gandolf gives you a map and tells you where to go")
+    print("You make it to the dungeon and find the entrence")
+    print("You open the door and find that it is very dark at first, your eyes start to adjust and you start to see everything")
+
     if location == 'empty' :
         print("You are in an empty room. The walls seem to be a bit mossy and gross with... who knows")  
     elif location == 'sword' :
