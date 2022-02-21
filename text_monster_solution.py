@@ -1,8 +1,7 @@
 # Text Monster Game 
 
 # Map of dungeon 
-from calendar import c
-from telnetlib import GA
+
 
 
 dungeon = [
@@ -40,6 +39,7 @@ while Game_Over == False:
     print("Gandolf gives you a map and tells you where to go")
     print("You make it to the dungeon and find the entrence")
     print("You open the door and find that it is very dark at first, your eyes start to adjust and you start to see everything")
+    print("----------------------------------------------")
 
     if location == 'empty' :
         print("You are in an empty room. The walls seem to be a bit mossy and gross with... who knows")  
