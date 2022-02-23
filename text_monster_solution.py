@@ -144,6 +144,12 @@ while Game_Over == False:
             current_room = 0
             current_floor = 2
             location = dungeon[current_floor][current_room]
+            dungeon = [
+        ['prize', 'boss monster','sword', 'emtpy', 'stairs down'], #floor 0
+        ['magic stones', 'monster','stairs down', 'empty', 'stairs up'], #floor 1
+        ['empty', 'sword','stairs up', 'monster', 'empty'] #floor 2
+        ]
+        
         else:
             print("Thanks for playing, Have a great day")
 
